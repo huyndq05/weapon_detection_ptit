@@ -1,0 +1,35 @@
+﻿{
+  "app": { "name": "ArmGuard", "tagline": "Phát hiện Hung khí Thời gian Thực" },
+  "nav": {
+    "dashboard": "Tổng quan",
+    "live": "Giám sát Trực tiếp",
+    "cameras": "Camera",
+    "events": "Sự kiện",
+    "analytics": "Thống kê",
+    "settings": "Cài đặt"
+  },
+  "auth": {
+    "login": "Đăng nhập",
+    "logout": "Đăng xuất",
+    "username": "Tên đăng nhập",
+    "password": "Mật khẩu",
+    "loginFailed": "Sai tên đăng nhập hoặc mật khẩu"
+  },
+  "event": {
+    "status": {
+      "new": "Mới",
+      "confirmed": "Xác nhận",
+      "false_alarm": "Báo động giả"
+    }
+  },
+  "common": {
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "delete": "Xóa",
+    "edit": "Sửa",
+    "add": "Thêm",
+    "search": "Tìm kiếm",
+    "loading": "Đang tải...",
+    "noData": "Không có dữ liệu"
+  }
+}

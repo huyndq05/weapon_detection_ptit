@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ──────────────────────────────────────────────────
+   CSS Custom Properties – Dark Security Theme
+   ────────────────────────────────────────────────── */
+@layer base {
+  :root {
+    --background:    220 20% 8%;
+    --foreground:    210 40% 95%;
+
+    --card:          220 18% 11%;
+    --card-foreground: 210 40% 95%;
+
+    --primary:       217 91% 60%;    /* Electric blue */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary:     220 16% 18%;
+    --secondary-foreground: 210 40% 90%;
+
+    --muted:         220 14% 15%;
+    --muted-foreground: 215 20% 55%;
+
+    --accent:        262 83% 65%;    /* Violet accent */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive:   0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border:        220 15% 18%;
+    --input:         220 15% 16%;
+    --ring:          217 91% 60%;
+
+    --radius:        0.6rem;
+
+    /* Alert glow colors */
+    --glow-danger:  0 84% 60%;
+    --glow-warning: 38 92% 50%;
+    --glow-success: 142 71% 45%;
+  }
+
+  /* Light mode override (optional) */
+  .light {
+    --background:    0 0% 98%;
+    --foreground:    220 15% 10%;
+    --card:          0 0% 100%;
+    --card-foreground: 220 15% 10%;
+    --primary:       217 91% 50%;
+    --secondary:     220 14% 94%;
+    --muted:         220 14% 92%;
+    --muted-foreground: 215 15% 45%;
+    --border:        220 13% 88%;
+    --input:         220 13% 90%;
+  }
+
+  * { @apply border-border; }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    /* Scrollbar tuỳ chỉnh */
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--border)) transparent;
+  }
+  body::-webkit-scrollbar { width: 6px; }
+  body::-webkit-scrollbar-track { background: transparent; }
+  body::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 3px; }
+}
+
+/* ──────────────────────────────────────────────────
+   Utility classes
+   ────────────────────────────────────────────────── */
+@layer utilities {
+  /* Glassmorphism card */
+  .glass {
+    background: rgba(255,255,255,0.04);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+
+  /* Camera feed aspect ratio */
+  .camera-tile { aspect-ratio: 16/9; }
+
+  /* Alert pulse glow */
+  .glow-danger  { box-shadow: 0 0 16px 2px hsl(var(--glow-danger) / 0.5); }
+  .glow-warning { box-shadow: 0 0 16px 2px hsl(var(--glow-warning) / 0.5); }
+  .glow-success { box-shadow: 0 0 16px 2px hsl(var(--glow-success) / 0.5); }
+}

@@ -1,0 +1,35 @@
+﻿{
+  "app": { "name": "ArmGuard", "tagline": "Real-time Weapon Detection" },
+  "nav": {
+    "dashboard": "Dashboard",
+    "live": "Live Monitor",
+    "cameras": "Cameras",
+    "events": "Events",
+    "analytics": "Analytics",
+    "settings": "Settings"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "username": "Username",
+    "password": "Password",
+    "loginFailed": "Invalid username or password"
+  },
+  "event": {
+    "status": {
+      "new": "New",
+      "confirmed": "Confirmed",
+      "false_alarm": "False Alarm"
+    }
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "search": "Search",
+    "loading": "Loading...",
+    "noData": "No data"
+  }
+}
