@@ -1,6 +1,6 @@
-# 🔫 ArmGuard – Hệ thống Phát hiện Hung khí Thời gian Thực
+# Weapon Detection – Hệ thống Phát hiện Hung khí Thời gian Thực
 
-> Đồ án PTIT | Python · FastAPI · YOLOv8 · React · TypeScript
+> BTL PTHTTM PTIT | Python · FastAPI · YOLOv26m · React · TypeScript
 
 ---
 
@@ -16,7 +16,7 @@
 
 ---
 
-## 🚀 Cài đặt nhanh
+## Cài đặt nhanh
 
 ### 1. Clone và chuẩn bị model
 
@@ -40,17 +40,11 @@ cp .env.example .env
 ```bat
 scripts\run_all.bat
 ```
-
-### 3. Chạy tự động (Linux/Mac)
-
-```bash
-chmod +x scripts/*.sh
-./scripts/run_all.sh
 ```
 
 ---
 
-## 🗂️ Cấu trúc dự án
+## Cấu trúc 
 
 ```
 weapon_detection_ptit/
@@ -63,17 +57,17 @@ weapon_detection_ptit/
 
 ---
 
-## 🔑 Tài khoản mặc định
+## Tài khoản mặc định
 
 | Tài khoản | Mật khẩu | Vai trò |
 |---|---|---|
 | admin | admin123 | Quản trị viên |
 
-> ⚠️ **Đổi mật khẩu ngay sau khi đăng nhập lần đầu!**
+>  **Đổi mật khẩu ngay sau khi đăng nhập lần đầu!**
 
 ---
 
-## 📡 Địa chỉ truy cập
+##  Địa chỉ truy cập
 
 - **Frontend**: http://localhost:5173
 - **Backend API**: http://localhost:8000
@@ -81,6 +75,6 @@ weapon_detection_ptit/
 
 ---
 
-## 📞 Liên hệ
+##  Liên hệ
 
 
